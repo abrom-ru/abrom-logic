@@ -1,0 +1,11 @@
+[Unit]
+Description=share abrom logic
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/root/./darkhttpd /root/abromLogic --auth abrom:abromlogic
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

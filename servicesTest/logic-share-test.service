@@ -1,0 +1,11 @@
+[Unit]
+Description=share abrom logic
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/root/./darkhttpd /root/abromLogicTest --port 9090 --auth abrom:abromlogic
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

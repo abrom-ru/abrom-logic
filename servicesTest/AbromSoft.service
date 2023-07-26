@@ -1,0 +1,18 @@
+
+
+[Unit]
+Description=start climateControl
+After=multi-user.target
+
+[Service]
+Type=simple
+
+#ExecStart=/mnt/data/makesimple/jdk/bin/java -jar /mnt/data/root/mqttClimateControl-1.0-SNAPSHOT-all.jar
+ExecStart=/mnt/data/abromSoftware/java/bin/java -jar /mnt/data/abromSoftware/abromLogic/abromLogic-0.1-beta-all.jar
+KillMode=process
+Restart=on-failure
+RestartSec=42s
+
+ 
+[Install]
+WantedBy=multi-user.target
