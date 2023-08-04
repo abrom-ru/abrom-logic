@@ -189,5 +189,7 @@
 
 
 Просмотр Базы Данных
-192.168.0.14:8080/rules/BUTTON/11d_156k2k3_bedroom/data
-192.168.0.14:8080/rules/list
+
+``192.168.0.14:8080/rules/BUTTON/11d_156k2k3_bedroom/data``
+
+``192.168.0.14:8080/rules/list``
